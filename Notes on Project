@@ -1,0 +1,37 @@
+125 Sections for all the courses throughout each semester
+
+CSC350 -01, -02, -03, -04, -05
+Section Courses:
+1.Course ex CSC
+2. Number ex 350
+3. version ex -01, -02, -03 ect
+4. Day
+5. Course Credit Hours (how many hours needed a week)
+5. Time Start
+6. Time End
+7. Room #
+
+Try to add the ability to delete a class and add another class (more dynamic)
+
+But static is fine
+
+8am - 10pm all 7 days a week
+
+Prioritize late classes (spread out)
+
+Each section have at least one morning, one evening and one weekend.
+
+Rather a schedule of Monday, Wednesday or Tuesday, Thursday 
+
+Limitation: Wednesday 2-4 club hour Do not schedule class
+
+Lookup hours for each class from the catelog 
+
+List of Rooms: in full hour chunks 
+M
+Tu
+Wed
+Thurs
+Fri
+Sa
+Su
