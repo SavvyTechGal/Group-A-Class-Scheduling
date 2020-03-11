@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2020-03-01" view-index="0" gantt-divider-location="252" resource-divider-location="300" version="2.8.10" locale="en_US">
+    <description/>
+    <view zooming-state="default:5" id="gantt-chart">
+        <field id="tpd3" name="Name" width="120" order="0"/>
+        <field id="tpd4" name="Begin date" width="56" order="1"/>
+        <field id="tpd5" name="End date" width="72" order="2"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="true"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="337" name="Create Databases" color="#000000" meeting="false" start="2020-03-10" duration="9" complete="0" thirdDate="2020-03-10" thirdDate-constraint="0" expand="false">
+            <task id="341" name="Brainstorm Data Structure Organization" color="#8cb6ce" meeting="false" start="2020-03-10" duration="4" complete="0" thirdDate="2020-03-10" thirdDate-constraint="1" expand="true">
+                <notes><![CDATA[Think about Node structures for Rooms
+What would be the optimal data structure for this
+And think about Database setup]]></notes>
+                <depend id="338" type="2" difference="0" hardness="Strong"/>
+                <depend id="340" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="338" name="Create Classes Database" color="#8cb6ce" meeting="false" start="2020-03-14" duration="2" complete="0" thirdDate="2020-03-10" thirdDate-constraint="0" expand="true">
+                <depend id="411" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="340" name="Create Rooms Database" color="#8cb6ce" meeting="false" start="2020-03-14" duration="2" complete="0" thirdDate="2020-03-10" thirdDate-constraint="0" expand="true">
+                <depend id="411" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="411" name="Post on Github and Peer Review (Databases)" color="#8cb6ce" meeting="false" start="2020-03-16" duration="1" complete="0" thirdDate="2020-03-10" thirdDate-constraint="0" expand="true">
+                <depend id="462" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="462" name="Fix anything found by reviews and repost (Databases)" color="#8cb6ce" meeting="false" start="2020-03-17" duration="2" complete="0" thirdDate="2020-03-10" thirdDate-constraint="0" expand="true">
+                <depend id="331" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="331" name="Databases Finished" color="#8cb6ce" meeting="true" start="2020-03-19" duration="0" complete="0" thirdDate="2020-03-10" thirdDate-constraint="0" expand="true">
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+            <depend id="76" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="76" name="Create Frontend" color="#000000" meeting="false" start="2020-03-19" duration="9" complete="0" thirdDate="2020-03-19" thirdDate-constraint="0" expand="false">
+            <task id="4" name="Brainstorm Frontend Design (Input Area)" color="#8cb6ce" meeting="false" start="2020-03-19" duration="2" complete="0" thirdDate="2020-03-10" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[Html/PHP]]></notes>
+                <depend id="83" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="83" name="HTML (Input Area)" color="#8cb6ce" meeting="false" start="2020-03-21" duration="2" complete="0" thirdDate="2020-03-23" thirdDate-constraint="0" expand="true">
+                <depend id="85" type="2" difference="0" hardness="Strong"/>
+                <depend id="87" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="85" name="CSS (Input Area)" color="#8cb6ce" meeting="false" start="2020-03-23" duration="2" complete="0" thirdDate="2020-03-23" thirdDate-constraint="0" expand="true">
+                <depend id="496" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="87" name="PHP (Submission) (Input Area)" color="#8cb6ce" meeting="false" start="2020-03-23" duration="2" complete="0" thirdDate="2020-03-23" thirdDate-constraint="0" expand="true">
+                <depend id="496" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="496" name="Post on Github and Peer Review (Frontend)" color="#8cb6ce" meeting="false" start="2020-03-25" duration="1" complete="0" thirdDate="2020-03-10" thirdDate-constraint="0" expand="true">
+                <depend id="563" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="563" name="Fix anything found by reviews and repost (Frontend)" color="#8cb6ce" meeting="false" start="2020-03-26" duration="2" complete="0" thirdDate="2020-03-19" thirdDate-constraint="0" expand="true">
+                <depend id="345" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="345" name="Frontend (Input Area) Finished" color="#8cb6ce" meeting="true" start="2020-03-28" duration="0" complete="0" thirdDate="2020-03-10" thirdDate-constraint="0" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+            <depend id="112" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="112" name="Create Output page" color="#000000" meeting="false" start="2020-03-28" duration="14" complete="0" thirdDate="2020-03-27" thirdDate-constraint="0" expand="false">
+            <task id="5" name="Brainstorm Output Prototype for each room's schedule" color="#8cb6ce" meeting="false" start="2020-03-28" duration="4" complete="0" thirdDate="2020-03-10" thirdDate-constraint="0" expand="true">
+                <depend id="124" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="124" name="HTML (Output Area)" color="#8cb6ce" meeting="false" start="2020-04-01" duration="2" complete="0" thirdDate="2020-03-23" thirdDate-constraint="0" expand="true">
+                <depend id="126" type="2" difference="0" hardness="Strong"/>
+                <depend id="128" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="126" name="CSS (Output Area)" color="#8cb6ce" meeting="false" start="2020-04-03" duration="3" complete="0" thirdDate="2020-03-23" thirdDate-constraint="0" expand="true">
+                <depend id="523" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="128" name="PHP (Outputa Area and Data)" color="#8cb6ce" meeting="false" start="2020-04-03" duration="5" complete="0" thirdDate="2020-03-23" thirdDate-constraint="0" expand="true">
+                <depend id="523" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="523" name="Post on Github and Peer Review (Output)" color="#8cb6ce" meeting="false" start="2020-04-08" duration="1" complete="0" thirdDate="2020-03-26" thirdDate-constraint="0" expand="true">
+                <depend id="588" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="588" name="Fix anything found by reviews and repost (Output)" color="#8cb6ce" meeting="false" start="2020-04-09" duration="2" complete="0" thirdDate="2020-03-28" thirdDate-constraint="0" expand="true">
+                <depend id="348" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="348" name="Output Page Finished" color="#8cb6ce" meeting="true" start="2020-04-11" duration="0" complete="0" thirdDate="2020-03-10" thirdDate-constraint="0" expand="true">
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+            <depend id="122" type="2" difference="0" hardness="Strong"/>
+            <depend id="138" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="122" name="Link Databases to frontend" color="#8cb6ce" meeting="false" start="2020-04-11" duration="1" complete="0" thirdDate="2020-03-10" thirdDate-constraint="0" expand="true"/>
+        <task id="138" name="Algorithm and Sorting" color="#000000" meeting="false" start="2020-04-11" duration="22" complete="0" thirdDate="2020-03-16" thirdDate-constraint="0" expand="false">
+            <task id="7" name="Brainstorm Prioritization Algorithm" color="#8cb6ce" meeting="false" start="2020-04-11" duration="4" complete="0" thirdDate="2020-03-10" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[1st section of class #: Morning
+2nd section of class #: Evening
+3rd section of class #: Weekend
+4th section of class #: Afternoon
+5th ect anywhere
+
+Factor in lecure hours and lab hours
+
+Ability for algorthm to split classes into multiple rooms
+	- If switching have ten minute break inbetween
+Make sure classes have full hour chunks]]></notes>
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
+                <depend id="177" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="177" name="Brainstorm Sorting Algorithm" color="#8cb6ce" meeting="false" start="2020-04-15" duration="1" complete="0" thirdDate="2020-03-17" thirdDate-constraint="0" expand="true">
+                <depend id="179" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="179" name="Code Sorting Algorithm" color="#8cb6ce" meeting="false" start="2020-04-16" duration="14" complete="0" thirdDate="2020-03-17" thirdDate-constraint="0" expand="true">
+                <depend id="525" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="8" name="Code Prioritization Algorithm" color="#8cb6ce" meeting="false" start="2020-04-15" duration="14" complete="0" thirdDate="2020-03-10" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[Good Luck]]></notes>
+                <depend id="525" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="525" name="Post on Github and Peer Review (Algorithm)" color="#8cb6ce" meeting="false" start="2020-04-30" duration="1" complete="0" thirdDate="2020-04-06" thirdDate-constraint="0" expand="true">
+                <depend id="608" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="608" name="Fix anything found by reviews and repost (Algorithm)" color="#8cb6ce" meeting="false" start="2020-05-01" duration="2" complete="0" thirdDate="2020-04-11" thirdDate-constraint="0" expand="true">
+                <depend id="353" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="353" name="Algorithm and Sorting Finished" color="#8cb6ce" meeting="true" start="2020-05-03" duration="0" complete="0" thirdDate="2020-03-10" thirdDate-constraint="0" expand="true">
+            <depend id="11" type="2" difference="0" hardness="Strong"/>
+            <depend id="200" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="200" name="Dev Test and Fix Errors" color="#000000" meeting="false" start="2020-05-03" duration="11" complete="0" thirdDate="2020-05-12" thirdDate-constraint="0" expand="false">
+            <task id="11" name="Test Everything!" color="#8cb6ce" meeting="false" start="2020-05-03" duration="2" complete="0" thirdDate="2020-03-10" thirdDate-constraint="0" expand="true">
+                <depend id="33" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="33" name="Create all other necessary functions" color="#8cb6ce" meeting="false" start="2020-05-05" duration="5" complete="0" thirdDate="2020-03-10" thirdDate-constraint="0" expand="true">
+                <depend id="12" type="2" difference="0" hardness="Strong"/>
+                <depend id="13" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="12" name="Comment Source Code" color="#8cb6ce" meeting="false" start="2020-05-10" duration="1" complete="0" thirdDate="2020-03-10" thirdDate-constraint="0" expand="true"/>
+            <task id="13" name="Cleanup code" color="#8cb6ce" meeting="false" start="2020-05-10" duration="2" complete="0" thirdDate="2020-03-10" thirdDate-constraint="0" expand="true">
+                <depend id="526" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="526" name="Post on Github and Peer Review (Dev Test)" color="#8cb6ce" meeting="false" start="2020-05-12" duration="1" complete="0" thirdDate="2020-04-24" thirdDate-constraint="0" expand="true">
+                <depend id="621" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="621" name="Fix anything found by reviews and repost (Dev Test)" color="#8cb6ce" meeting="false" start="2020-05-13" duration="1" complete="0" thirdDate="2020-05-02" thirdDate-constraint="0" expand="true">
+                <depend id="357" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="357" name="Final Test Successful" color="#8cb6ce" meeting="true" start="2020-05-14" duration="0" complete="0" thirdDate="2020-03-10" thirdDate-constraint="0" expand="true">
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="14" name="Submit" color="#8cb6ce" meeting="true" start="2020-05-14" duration="0" complete="0" thirdDate="2020-03-10" thirdDate-constraint="1" expand="true">
+            <notes><![CDATA[Submit]]></notes>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Savana Hughes" function="Default:1" contacts="savanahughes@gmail.com" phone="570-236-5914"/>
+        <resource id="1" name="Jonathan Bitler" function="SoftwareDevelopment:2" contacts="jonathanbitler1@gmail.com" phone="9175973031"/>
+        <resource id="2" name="Hassane Sidibe" function="SoftwareDevelopment:9" contacts="hassanesidibe5@gmail.com" phone="3473359577"/>
+    </resources>
+    <allocations>
+        <allocation task-id="4" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="83" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="126" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="128" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="177" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="33" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="12" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="13" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="340" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="341" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="411" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="462" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="496" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="563" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="523" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="588" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="525" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="608" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="526" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="621" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="85" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="124" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="128" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="122" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="177" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="11" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="33" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="12" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="341" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="411" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="462" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="496" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="563" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="523" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="588" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="525" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="608" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="526" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="621" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="2" function="SoftwareDevelopment:9" responsible="false" load="100.0"/>
+        <allocation task-id="87" resource-id="2" function="SoftwareDevelopment:9" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="2" function="SoftwareDevelopment:9" responsible="false" load="100.0"/>
+        <allocation task-id="128" resource-id="2" function="SoftwareDevelopment:9" responsible="false" load="100.0"/>
+        <allocation task-id="7" resource-id="2" function="SoftwareDevelopment:9" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="2" function="SoftwareDevelopment:9" responsible="false" load="100.0"/>
+        <allocation task-id="177" resource-id="2" function="SoftwareDevelopment:9" responsible="false" load="100.0"/>
+        <allocation task-id="11" resource-id="2" function="SoftwareDevelopment:9" responsible="false" load="100.0"/>
+        <allocation task-id="33" resource-id="2" function="SoftwareDevelopment:9" responsible="false" load="100.0"/>
+        <allocation task-id="12" resource-id="2" function="SoftwareDevelopment:9" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="2" function="SoftwareDevelopment:9" responsible="false" load="100.0"/>
+        <allocation task-id="338" resource-id="2" function="SoftwareDevelopment:9" responsible="true" load="100.0"/>
+        <allocation task-id="341" resource-id="2" function="SoftwareDevelopment:9" responsible="false" load="100.0"/>
+        <allocation task-id="411" resource-id="2" function="SoftwareDevelopment:9" responsible="false" load="100.0"/>
+        <allocation task-id="462" resource-id="2" function="SoftwareDevelopment:9" responsible="false" load="100.0"/>
+        <allocation task-id="496" resource-id="2" function="SoftwareDevelopment:9" responsible="false" load="100.0"/>
+        <allocation task-id="563" resource-id="2" function="SoftwareDevelopment:9" responsible="false" load="100.0"/>
+        <allocation task-id="523" resource-id="2" function="SoftwareDevelopment:9" responsible="false" load="100.0"/>
+        <allocation task-id="588" resource-id="2" function="SoftwareDevelopment:9" responsible="false" load="100.0"/>
+        <allocation task-id="525" resource-id="2" function="SoftwareDevelopment:9" responsible="false" load="100.0"/>
+        <allocation task-id="608" resource-id="2" function="SoftwareDevelopment:9" responsible="false" load="100.0"/>
+        <allocation task-id="526" resource-id="2" function="SoftwareDevelopment:9" responsible="false" load="100.0"/>
+        <allocation task-id="621" resource-id="2" function="SoftwareDevelopment:9" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
