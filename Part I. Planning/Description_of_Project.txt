@@ -1,0 +1,19 @@
+The purpose of this project is to provide registrar with an efficient method of scheduling classes, for the CIS and CSC departments. The user will upload a csv file of the sections to be scheduled by the algorithm and upload a csv file of rooms that those sections can be scheduled into. The algorithm will assign a room number, day, and time for the courses, based on the number of hours and days the classes need to be held per week. 
+
+It also creates the schedule with priorities in mind. 
+These Priorities are as follows:
+  For Time of day:
+    ex: if x sections for course number: schedule here
+    0 sections: Weekdays || morning
+    1 sections: Weekdays || evening
+    2 sections: Weekend || morning
+    3 sections: Weekday || afternoon
+    4 sections: Weekend || afternoon
+    more than 4 sections loop back to 0 and start over so 5 goes to 0, 6 goes to 7 ect...
+  For Days:
+    If class held:
+    1 day per week (find first available day in right time slot)
+    2 days per week (Mo, We and Tu, Thu, and We, Fr)
+    3 days per week (Mo, We, Thu, and Mo, Tu, Thur, and Mo, Thur, Fri)
+
+The program will display a table to the user of the sections that have been scheduled, with room number, day of the week, timeslot, course number, and section number.The user will also have the ability to view a each room independently.
